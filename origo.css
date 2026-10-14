@@ -1,0 +1,29 @@
+.origo-products{border-top:1px solid var(--line);padding:55px 0 65px}.origo-products h2{margin-top:20px}.products-intro{max-width:720px;color:#bdc3c2;line-height:1.85;margin-top:25px}.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:42px}.product{border-top:1px solid var(--gold);padding-top:24px}.product h3{font:400 1.8rem Georgia,serif;margin:17px 0}.product>p:not(.eyebrow){color:#bdc3c2;line-height:1.8}.defi-label{padding-left:0}.defi-hero h1{font-size:clamp(2.75rem,5.8vw,5.3rem)}
+@media(max-width:750px){.product-grid{grid-template-columns:1fr;gap:30px}.origo-products{padding:35px 0 40px}.product-grid{margin-top:30px}}
+.origo-row{border-top:1px solid var(--line);padding:55px 0 65px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:70px;align-items:start}.career-path{list-style:none;padding:0;margin:36px 0 0;max-width:370px}.career-path li:not(.career-arrow){display:flex;gap:24px;align-items:center;padding:18px 0}.career-path span{color:var(--gold);font-size:.75rem;letter-spacing:.15em}.career-path strong{font:400 clamp(1.5rem,3vw,2.3rem) Georgia,serif}.career-arrow{color:var(--gold);padding-left:8px;font-size:1.5rem}.career-path li:last-child strong{color:var(--gold)}.origo-events{border-top:1px solid var(--line);padding:55px 0 65px}.events-title h2{margin-top:20px}.events-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:70px;align-items:start;margin-top:35px}.event-images{display:grid;gap:26px}.event-images img{display:block;width:100%;height:auto;border:0}.forum-poster{max-width:360px}.event-images figcaption{color:var(--muted);font-size:.8rem;margin-top:12px;line-height:1.6}@media(max-width:750px){.origo-row,.events-layout{grid-template-columns:1fr;gap:28px}.origo-row,.origo-events{padding:35px 0 40px}.forum-poster{max-width:100%}}
+
+/* Keep Origo columns independent of the DeFi named grid areas. */
+.origo-row>.defi-label,.origo-row>.defi-copy,.origo-row>.events-title{grid-area:auto;min-width:0}
+.origo-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,70px)}
+.origo-row h2{font-size:clamp(2rem,3.2vw,3rem);line-height:1.15}
+.origo-row>.defi-copy{padding-top:42px}
+.bd-photo,.event-images{margin-top:32px}
+.bd-photo img,.event-images img{display:block;width:100%;height:auto;border:0}
+.bd-photo figcaption,.event-images figcaption{font-size:.8rem;color:var(--muted);margin-top:12px;line-height:1.6}
+.forum-poster{width:min(100%,340px);max-width:none}
+.career-path{margin-top:28px}.career-path li:not(.career-arrow){padding:10px 0}.career-arrow{line-height:1;padding-block:3px}
+@media(max-width:750px){.origo-row{grid-template-columns:minmax(0,1fr);gap:28px}.origo-row>.defi-copy{padding-top:0}.forum-poster{width:min(100%,340px)}}
+
+.origo-aligned{border-top:1px solid var(--line);padding:55px 0 65px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px clamp(32px,5vw,70px);align-items:stretch}
+.aligned-heading{grid-column:1/-1}.aligned-heading h2{margin-top:20px;font-size:clamp(2rem,3.2vw,3rem);line-height:1.15}
+.origo-aligned>.defi-copy{grid-area:auto;padding:0;min-width:0}
+.aligned-photo{margin:0;min-height:300px;display:grid;grid-template-rows:minmax(0,1fr) auto;gap:12px}
+.aligned-photo a{position:relative;display:block;min-height:0}
+.aligned-photo img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;object-position:left top;border:0}
+.aligned-photo figcaption{font-size:.8rem;color:var(--muted);line-height:1.6}
+@media(max-width:750px){.origo-aligned{grid-template-columns:minmax(0,1fr);padding:35px 0 40px;gap:26px}.aligned-heading{grid-column:1}.aligned-photo{min-height:0;display:block}.aligned-photo a{position:static}.aligned-photo img{position:static;height:auto;max-height:360px;width:auto;max-width:100%}.aligned-photo figcaption{margin-top:12px}}
+
+.aligned-photo{grid-template-rows:minmax(0,1fr);gap:0}
+
+.career-path{text-align:center;width:100%;max-width:370px}.career-path li:not(.career-arrow){justify-content:center;gap:0}.career-path .career-arrow{display:flex;justify-content:center;align-items:center;padding:8px 0;line-height:1;color:var(--gold)}
+
